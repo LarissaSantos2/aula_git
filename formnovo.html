@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Times Paulista</h1>
+    <form action="mailto:larissaoliv1395@gmail.com" method="post">
+        <fieldset>
+            <legend>Informações Do Aluno</legend>
+        <label for="cNome">Nome:</label>
+        <input type="text" id="cNome" name="cNome">
+
+        <br><br>
+
+        <labeL for="sNome">Sobrenome:</labeL>
+        <input type="text" id="sNome" name="sNome">
+
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" placeholder="Exemplo@gmail.com" id="email" name="email">
+    </fieldset> 
+    <br> <br>
+        <!--   tag select e atributos selected e disabled -->
+        <fieldset>
+            <legend>Informações Cadastrais</legend>
+        <label for="times">Selecione seu time: </label>
+
+        <select name="times" id="times">
+            <option value="desabilitado" selected disabled>Opções</option>
+            <option value="saoPaulo">São Paulo</option>
+            <option value="corinthians">Corinthians</option>
+            <option value="palmeiras">Palmeiras</option>
+            <option value="santos">Santos</option>
+        </select>
+        <br><br>
+        <!--  usando tag Datalist -->
+
+        <label for="cCid">Sua cidade:</label>
+        <input type="text" name="cCid" id="cCid" list="Cidades" autocomplet="on">
+        <datalist id="Cidades">
+            <option value="São Paulo"></option>
+            <option value="Juquitiba"></option>
+            <option value="Valinhos"></option>
+            <option value="Pinhalzinho"></option>
+            <option value="Angra dos Reis"></option>
+        </datalist>
+            <br><br>
+           <label for="textArea">Sua sugestão aqui:</label>
+           <br><br>
+           <textarea name="textArea" id="textArea" cols="60" rows="4" placeholder="Digite aqui." maxlength="300"></textarea>
+
+
+        </fieldset>
+        <br> <br>
+             <input type="submit" value="Enviar">                                                                                               
+       
+    </form>
+</body>
+
+</html>
